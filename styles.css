@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=IM+Fell+English&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#faf9f6;color:#1a1a1a;padding:2rem 1rem;}
+.wrap{max-width:760px;margin:0 auto;}
+h1{font-family:'Cinzel',serif;font-size:24px;font-weight:500;letter-spacing:.03em;margin-bottom:4px;}
+.sub{font-size:13px;color:#666;margin-bottom:1.25rem;}
+.search-area{background:#fff;border:1px solid #e0dcd6;border-radius:12px;padding:1rem 1.1rem;margin-bottom:1rem;}
+.row1{display:flex;gap:8px;margin-bottom:.6rem;position:relative;}
+.input-wrap{flex:1;position:relative;}
+.row1 input{width:100%;font-family:'IM Fell English',serif;font-size:15px;height:40px;padding:0 14px;border:1px solid #ccc;border-radius:8px;background:#faf9f6;outline:none;}
+.row1 input:focus{border-color:#888;background:#fff;}
+.row1 button{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.07em;padding:0 20px;height:40px;cursor:pointer;border:1px solid #ccc;border-radius:8px;background:#fff;white-space:nowrap;}
+.row1 button:hover{background:#f0ede8;}
+.autocomplete-list{position:absolute;top:calc(100% + 3px);left:0;right:0;background:#fff;border:1px solid #ccc;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:100;max-height:220px;overflow-y:auto;display:none;}
+.autocomplete-list.open{display:block;}
+.ac-item{padding:8px 14px;font-family:'IM Fell English',serif;font-size:14px;cursor:pointer;color:#333;}
+.ac-item:hover,.ac-item.selected{background:#f5f2ee;color:#111;}
+.ac-item mark{background:none;color:#1a56c4;font-weight:600;font-style:normal;}
+.row2{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.row2 label{font-size:12px;color:#666;}
+.row2 select{font-size:13px;height:32px;padding:0 10px;border:1px solid #ccc;border-radius:6px;background:#faf9f6;color:#1a1a1a;cursor:pointer;max-width:240px;}
+.loan-toggle{font-size:12px;color:#666;cursor:pointer;display:flex;align-items:center;gap:5px;margin-left:auto;}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1rem;align-items:center;}
+.chip-label{font-size:11px;color:#999;letter-spacing:.06em;text-transform:uppercase;}
+.chip{font-size:12px;padding:3px 11px;border:1px solid #ccc;border-radius:99px;cursor:pointer;color:#666;background:transparent;}
+.chip:hover{background:#f0ede8;color:#222;}
+.stats-row{display:flex;gap:12px;margin-bottom:.75rem;align-items:center;}
+.count{font-size:12px;color:#999;}
+.results{display:flex;flex-direction:column;gap:8px;}
+.card{background:#fff;border:1px solid #e0dcd6;border-radius:10px;padding:.85rem 1rem;cursor:pointer;}
+.card:hover{border-color:#bbb;}
+.card.open{border-color:#888;}
+.card-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.root{font-family:'Cinzel',serif;font-size:17px;font-weight:500;}
+.meaning{font-family:'IM Fell English',serif;font-size:14px;color:#555;}
+.gloss{font-size:12px;color:#888;font-style:italic;}
+.match-form{font-size:12px;padding:2px 8px;border-radius:99px;background:#f0f7ff;color:#2563b0;border:1px solid #bdd;margin-left:auto;}
+.loan-badge{font-size:10px;padding:2px 7px;border-radius:99px;background:#fff8e1;color:#b8860b;margin-left:4px;}
+.body{margin-top:10px;display:none;border-top:1px solid #eee;padding-top:10px;}
+.card.open .body{display:block;}
+.slabel{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#999;margin:10px 0 5px;}
+.slabel:first-child{margin-top:0;}
+.lang-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:4px 12px;}
+.lang-item{font-size:13px;color:#666;line-height:1.6;}
+.lang-item span{color:#111;font-family:'IM Fell English',serif;}
+.lang-item.hl span{color:#1a56c4;font-weight:500;}
+.notes{font-family:'IM Fell English',serif;font-size:14px;color:#666;line-height:1.6;margin-top:4px;}
+.no-res{font-size:14px;color:#888;padding:.5rem 0;font-family:'IM Fell English',serif;display:none;}
+.more-btn{font-size:13px;color:#666;cursor:pointer;padding:8px;text-align:center;border:1px solid #e0dcd6;border-radius:8px;margin-top:8px;background:#fff;}
+.more-btn:hover{background:#f5f2ee;}
